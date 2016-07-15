@@ -12,9 +12,12 @@
 				<!-- Bootstrap CSS -->
 				<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 				<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+				<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 				
 				<!-- Custom CSS -->
 				<link href="includes/css/styles.css" rel="stylesheet">
+				<link href="includes/css/font-awesome.css" rel="stylesheet">
+				<link href="includes/css/font-awesome.min.css" rel="stylesheet">
 				
 				<!-- Include Modernizr in the head, before any other Javascript -->
 				<script src="includes/js/modernizr-2.6.2.min.js"></script>
@@ -23,106 +26,107 @@
 			<body>
 			
 		<div class="container" id="main">
-			<div class="navbar navbar-fixed-top">
-				<div class="container">
-					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/"><img src="images/bat.jpg" alt="your logo"></a>
-					<div class="nav-collapse collapse navbar-responsive-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Home</a>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Book now <strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-plane">  Domestic Flights</span></a>
-								</li>
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-plane">  International Flights</span></a>
-								</li>
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-home">  Domestic Hotels</span></a>
-								</li>
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-home">  International Hotels</span></a>
-								</li>
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-snowflake">  Domestic Holidays</span></a>
-								</li>
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-snowflake">International Holidays</span></a>
-								</li>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/bat.jpg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Book Now<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="domfli.html">Domestic flights</a></li>
+            <li><a href="#">International flights</a></li>
+            <li><a href="#">Domestic Hotels</a></li>
+            <li><a href="#">International Hotels</a></li>
+             <li><a href="#">Domestic Holidays</a></li>
+              <li><a href="#">International Holidays</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><small>more</small></a></li>
+             <li><a href="#">Buses</a></li>
+             <li><a href="#">Trains</a></li>
+             <li><a href="#">Flight + Hotel combo</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search based on package" id="searchInput">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-print"></span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Sign in / Sign up <span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>  My profile</a></li>
+          	<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>  Manage bookings</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-usd"></span>  Make payment</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>  Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-remove"></span>  Cancel bookings</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-off"></span>  Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>  
 
-								<li class="divider">
-								</li>
-								<li class="dropdown-header">More</li>
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-bus">Buses</span></a>
-								</li>
-								<li>
-									<a href="#">Trains</a>
-								</li>
-								<li>
-									<a href="#">Flight + Hotel combo</a>
-								</li>
-								<li>
-									<a href="#">Hotel + Holiday combo</a>
-								</li>	
-								<li>
-									<a href="#">Trip advisor</a>
-								</li>
 
-							</ul>
-						</li>
-					</ul>	
-				<form class="navbar-form pull-left">
-				  <input type="text" class="form-control" placeholder="search for package" id="searchInput">
-				  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-			 	</form>
 
-				  <ul class="nav navbar-nav pull-right">
-				  <li>
-				  	<a href="#">About us</a>
-				  </li>
-				  <li>
-				  	<a href="#">Career</a>
-				  </li>
-				  <li>
-				  	<a href="#">Contact us</a>
-				  </li>
-				  <li>
-				  	<a href="#"><span class="glyphicon glyphicon-print"></span></a>
-				  </li>
 
-				  	<li class="dropdown">
-				  		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign in/Sign up<strong class="caret"></strong></a>
-				  		<ul class="dropdown-menu">
-				  			<li>
-							<a href="#"><span class="glyphicon glyphicon-wrench"></span>Web</a>
-						</li>
-							<li>
-							<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Wqweb</a>
-						</li>
-							<li>
-							<a href="#"><span class="glyphicon glyphicon-refresh"></span>qwqWeb</a>
-						</li>
 
-						<li class="divider"></li>
-						<li>
-							<a href="#"><span class="glyphicon glyphicon-off"></span>sign out</a>
-						</li>
-				  			
-				  		</ul>
-				  	</li>
-				  </ul>
-				  </div><!-- end nav-collapse -->  
-				  </div><!-- end container -->
-</div><!-- end navbar -->     
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">&times;</button>
+				
+				<h4 class="modal-title">View your E-ticket</h4>
+			</div><!-- end modal-header -->
+			<div class="modal-body">								
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputName">User-ID</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputuser" placeholder="User-id" type="text">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputEmail">Password</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputpass" placeholder="password" type="password">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputMessage">Mobile</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputMessage" placeholder="Number" type="number">
+							<button class="btn btn-primary pull-left" type="submit">View Tickets</button>
+							<button class="btn btn-success pull-right" type="submit">Print now</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
 				<div class="carousel slide" id="myCarousel">
 					<ol class="carousel-indicators">
 						<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
@@ -147,8 +151,10 @@
 
 						<div class="item" id="slide3">
 						<div class="carousel-caption">
+						<div class="hydra">
 						<h4> Hydra Hotels</h4>
 						<p>Find best deals across 200,000+ hotels worldwide</p>
+						</div>
 						</div>
 							</div>
 
@@ -178,9 +184,10 @@
 
 			</div><!-- end page head -->
 			<p class="lead deal text-success">Download the Hydra app right now and get your first bus ride free!!!!</p>	
-
-			<a href="" class="btn btn-large btn-primary " id="alertMe">Get App now  <span class="glyphicon glyphicon-download"></span></a>
-			<a href="" class="btn btn-sm btn-link "><ins>read terms and conditions</ins></a>				
+			<div class="app">
+			<a href="" class="btn btn-large btn-primary" id="alertMe">Get App now  <span class="glyphicon glyphicon-download"></span></a>
+			<a href="" class="btn btn-sm btn-link "><ins>read terms and conditions</ins></a>
+			</div>				
 		</div><!-- end well-->				
 	</div><!-- end col-12 -->
 </div><!-- end bigcall -->
@@ -189,24 +196,121 @@
 								<h3 class="deal"><mark>DEALS AND PACKAGES</mark></h3>
 							</div>
 			</div>
+			<div class="container" id="hello">
 	<div class="row" id="features">
 		<div class="col-sm-4 feature">
-					<h3>Travel Abroad!!</h3>
+					<h3><em>Travel Abroad!!</em></h3>
 					<img src="images/1.jpg" alt="html5">
-						<a href="www.google.com" target="_blank" class="btn btn-warning btn-xs"><h5>Search Hotels</h5></a>
+						<a href="www.google.com" target="_blank" class="btn btn-warning btn-sm"><h5>Search Hotels</h5></a>
 		</div>
 		<div class="col-sm-4 feature">
-					<h3>Honeymoon Deals!!</h3>
+					<h3><em>Honeymoon Deals!!</em></h3>
 					<img src="images/2.jpg" alt="html5" >
 						<a href="http://www.google.com" target="_blank" class="btn btn-danger btn-sm"><h5>Search Holiday Deals</h5></a>
 			</div>
 		<div class="col-sm-4 feature">
-					<h3>Women Only Deals!!!</h3>
+					<h3><em>Women Only Deals!!!</em></h3>
 					<img src="images/3.jpg" alt="boot3">
 
 						<a href="www.gmail.com" target="_blank" class="btn btn-info btn-sm"><h5>Book Now</h5></a>
 			</div>
 	</div>
+	</div>
+
+
+
+	<div class="container spcl">
+		<h3 class="big-title"><bold>Hydra Specials</bold></h3>
+		<div class="row spcl spcl2">
+		<div class="col-sm-4">
+					<a href=""><img src="images/11.jpg"></a>
+					<h5 class="price2">Flat 50% OFF<br><small>use code BLISS35 to avail offer</small></h5>
+					<h4 class="price">&#8377;5,000<br><small class="code">onwards</small></h4>
+					</div>
+		<div class="col-sm-4">
+		<a href=""><img src="images/aus.jpg"></a>
+		<h5 class="price2">Australia packages<br><small>5N/6D</small></h5>
+		<h4 class="price">&#8377;10,00,00<br><small class="code">onwards</small></h4>
+		</div>
+
+
+		<div class="col-sm-4">
+		<a href=""><img src="images/22.jpg"></a>
+		<div class="new-details"></div>
+		<h5 class="price2">Ladakh Super Saver<br><small>4N/5D</small></h5>
+		<h4 class="price">&#8377;10,000<br><small class="code">onwards</small></h4>
+		</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+			<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2">
+			<h6><em>Copyright &copy; 2016 </em><span class="hyd"><ins>Hydra</ins></span></h6>
+			</div>
+			
+			<div class="col-sm-4">
+				<h5 class="ab">About Us</h5>
+				<p class="para"><em>Nurtured from the seed of a single great idea - to empower the traveller - Hydra went on to pioneer the entire online travel industry in India. Hydra has revolutionised the travel industry over the years. This is the story of Hydra, India's Online Travel Leader. </em></p>
+			</div>
+			
+			<div class="col-sm-2">
+				<h5 class="gavi"><b>Navigation</b></h5>
+				<ul class="unstyled">
+					<li class="lit"><a href="#">Home</a></li>
+					<li class="lit"><a href="#">Career</a></li>
+					<li class="lit"><a href="#">Support</a></li>
+					<li class="lit"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-sm-4">
+				<h5><b>Follow Us :</b></h5>
+				<ul class="unstyled">
+				<li class="hi"><a href="#"><img src="images/tw.png"></a></li>
+				<li class="hi"><a href="#"><img src="images/f.jpg"></a></li>
+				<li class="hi"><a href="#"><img src="images/yu.png"></a></li>
+				<li><a href="#"><img src="images/l.jpg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+			
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
 
 
 

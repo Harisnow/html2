@@ -52,8 +52,12 @@ body{
 ul.unstyled{
   list-style: none;
   padding: 0;
-
 }
+.hi{
+float: left;
+padding-right: 20px;
+}
+
 
 /* --------------------------------------
    Navbar
@@ -110,7 +114,16 @@ ul.unstyled{
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-
+.price{
+  float: right;
+  margin-bottom: 0px;
+}
+.code{
+  padding-left: 5px;
+}
+.price2{
+  float: left;
+}
 .alert
 { 
   margin-top: 20px;
@@ -125,60 +138,77 @@ ul.unstyled{
   margin: 20px 0;
 }
 
-.tabbable img.thumbnail{
-  margin:0 20px 10px 0;
+.hydra{
+  margin-bottom: 50px;
 }
 
-.thumbnails{
-  margin:20px 0;
+
+.image1{
+  background:url(../../images/q.jpg);
 }
 
-.thumbnail{
-  position: relative;
-}
-
-.thumbnail h3{
-  font-size: 16px;
-  margin: 0 0 10px;
-  line-height: 20px;
-}
-
-.thumbnail .price{
-  font-size: 22px;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 10px;
-}
-
-.thumbnail .price sup
-{
-  font-weight: normal;
+ .col-sm-2 .lit{
   font-size: 12px;
 }
-
-.thumbnail span.glyphicon
-{
-  margin-right: 5px;
+.big-title{
+  text-align:center;
 }
 
+.hyd{
+  font-size: 15px;
+}
+
+.app{
+  text-align:center;
+}
+
+.spcl{
+  padding-top: 40px;
+}
+
+.spcl2{
+  padding-bottom: 40px;
+}
+
+.ab
+{
+  color:pink;
+}
+.para 
+{
+  font-size: 12px;
+  color:rgb(0,255,0);
+}
+
+.gavi{
+  color: rgb(0,255,255);
+}
+
+.red
+{
+  background: url('../../images/sri.jpg');
+}
 
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
-
-.thumbnail .price{
-
-  font-size: 14px;
-}
-
-.thumbnail .price sup
+@media (max-width: 480px) 
 {
-  font-size: 10px;
-}
+   #slide1{
+      background:url('../../images/flightsm.jpg') top center no-repeat;
+   }
+   #slide2{
+      background:url('../../images/bussm.jpg') top center no-repeat;
+   }
+
+   #slide3{
+      background:url('../../images/hotelsm.jpg') top center no-repeat;
+   }
+    #slide4{
+      background:url('../../images/homesm.jpg') top center no-repeat;
+   }
 	
 }
 
@@ -189,17 +219,17 @@ ul.unstyled{
       height: 500px;
    }
    #slide1{
-      background:url('../../flight/.jpg') top center no-repeat;
+      background:url('../../images/flightmed.jpg') top center no-repeat;
    }
    #slide2{
-      background:url('../../bus/.jpg') top center no-repeat;
+      background:url('../../images/busmed.jpg') top center no-repeat;
    }
 
    #slide3{
-      background:url('../../hotel/.jpg') top center no-repeat;
+      background:url('../../images/hotelmed.jpg') top center no-repeat;
    }
     #slide4{
-      background:url('../../home/.jpg') top center no-repeat;
+      background:url('../../images/homemed.jpg') top center no-repeat;
    }
    .carousel-caption{
       font-size: 16px;
