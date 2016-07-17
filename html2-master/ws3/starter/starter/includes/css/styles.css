@@ -1,0 +1,441 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#features{
+  text-align: center;
+}
+
+#features img{
+  margin: 0 0 20px;
+}
+
+#inputMessage{
+  margin-bottom: 15px;
+}
+
+footer{
+  background-color: #333;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.well .page-header {
+  margin-top: 0;
+}
+.well .page-header h1{
+  margin-top: 0p;
+}
+
+ul.unstyled{
+  list-style: none;
+  padding: 0;
+}
+.hi{
+float: left;
+padding-right: 20px;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#searchInput{
+   width: 250px;
+}
+.navbar-brand{
+   padding: 0px 15px;
+}
+   
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel{
+  margin-bottom: 20px;
+   margin-top: 60px;
+   font-family: 'Pacifico', cursive;
+}
+.left carousel-control{
+   left:none;
+}
+.carousel-caption{
+  margin:auto;
+  width: 290px !important;
+  font-size: 24px;
+  border: solid 1px #fff;
+}
+.carousel-caption h4{
+   font-size: 32px;
+}
+
+
+#myCarousel .item {
+   height: 400px;
+}
+#slide1{
+   background:url('../../images/flight.jpg') top center no-repeat;
+}
+#slide2{
+   background:url('../../images/bus.jpg') top center no-repeat;
+}
+
+#slide3{
+   background:url('../../images/hotel.jpg') top center no-repeat;
+}
+
+#slide4{
+   background:url('../../images/home.jpg') top center no-repeat;
+}
+
+
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.price{
+  float: right;
+  margin-bottom: 0px;
+  width: 30%;
+}
+.code{
+  padding-left: 5px;
+}
+.price2{
+  float: left;
+}
+.alert
+{ 
+  margin-top: 20px;
+  display: none;
+}
+
+.deal{
+  text-align: center;
+}
+.well
+{
+  margin: auto;
+}
+
+.hydra{
+  margin-bottom: 50px;
+}
+
+
+.image1{
+  background:url(../../images/q.jpg);
+}
+
+ .col-sm-2 .lit{
+  font-size: 12px;
+}
+.big-title{
+  text-align:center;
+}
+
+.hyd{
+  font-size: 15px;
+}
+
+.app{
+  text-align:center;
+}
+
+.spcl{
+  margin-top: 30px;
+  padding-top: 40px;
+  background: #FFF0F5;
+}
+
+.spcl2{
+  padding-bottom: 40px;
+}
+
+.ab
+{
+  color:pink;
+}
+.para 
+{
+  font-size: 12px;
+  color:rgb(0,255,0);
+}
+
+.gavi{
+  color: rgb(0,255,255);
+}
+
+.red
+{
+  background: url('../../images/sri.jpg');
+}
+
+.deals{
+  margin-top: 30px;
+  background: #CEDDB6;
+  padding-bottom: 10px;
+}
+
+
+.about{
+    padding: 4em 0;
+    background: #DCEDF9;
+    margin-bottom: 20px;
+}
+.about-heading h2{
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    color: #383838;
+   font-family: 'Pacifico', cursive;
+}
+.about-heading p{
+  text-align: center;
+    margin: 1em 0 0 0;
+    font-size: .875em;
+    color: #383838;
+}
+.about-grids {
+    margin: 4em 0 0 0;
+}
+.about-grid{
+  text-align:center;
+}
+.about-grid-info{
+    background: url(../../images/a.png)no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 255px;
+}
+.about-grid-info h4{
+    color: #FFF;
+    font-size: 2em;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    line-height: 7.5em;
+}
+.about-grid-info1{
+  background: url(../../images/a1.png)no-repeat 0px 0px;
+  background-size: cover;
+    min-height: 255px;
+}
+.about-grid-info2{
+  background: url(../../images/a2.png)no-repeat 0px 0px;
+  background-size: cover;
+    min-height: 255px;
+}
+.about-grid-info3{
+  background: url(../../images/a3.png)no-repeat 0px 0px;
+  background-size: cover;
+    min-height: 255px;
+}
+
+
+
+
+.footer-grid-heading h4{
+  font-size:2em;
+  margin:0;
+}
+.footer-grid-info {
+    margin: 1em 0 0 0;
+}
+.footer-grid-info ul{
+  padding:0;
+  margin:0;
+}
+.footer-grid-info ul li{
+  display:block;
+}
+.footer-grid-info ul li a{
+    font-size: .875em;
+    color: #BBBBBB;
+    line-height: 1.8em;
+  text-decoration:none;
+}
+.footer-grid-info ul li a:hover{
+  color:#fd5c63;
+}
+.social-grid{
+    margin: 1em 0 0 0;  
+}
+.social {
+    margin: 1em 0 0 0;
+}
+.social ul{
+  padding:0;
+  margin:0;
+}
+.social ul li{
+  display:inline-block;
+}
+.social ul li a {
+  color: #333;
+    text-align: center;
+}
+.social ul li a i.fa{
+    height: 40px;
+    width: 40px;
+    background: #383838;
+    line-height: 40px;
+    color: #FFF;
+    border-radius: 50%;
+}
+.social ul li a i.fa:hover {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  background: #F44336;
+}
+.social ul li:nth-child(2){
+  margin:0 .5em;
+}
+.social ul li:nth-child(3){
+  margin:0 .5em 0 0;
+}
+.footer-grid-info form input[type="email"] {
+    background: #fff;
+    box-shadow: none !important;
+    padding: 10px 10px;
+    color: #BBBBBB;
+    font-size: .875em;
+    width: 100% !important;
+    font-weight: 400;
+    border: 1px solid #BBBBBB;
+    margin: 0 0 1em 0;
+}
+.footer-grid-info form input[type="email"]:focus {
+    outline: none;
+}
+.footer-grid-info form input[type="submit"] {
+    border: solid 2px #383838;
+    color: #383838;
+    font-size: .875em;
+    padding: .5em 2em;
+    text-decoration: none;
+    background: none;
+    border-radius: 5px;
+}
+.footer-grid-info form input[type="submit"]:hover{
+  color:#fd5c63;
+  border:solid 2px #fd5c63;
+  transition:0.5s all;
+}
+
+
+.imgg{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.text
+{
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  color: #808080;
+}
+.tex
+{
+  color:  #E9967A;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) 
+{
+   #slide1{
+      background:url('../../images/flightsm.jpg') top center no-repeat;
+   }
+   #slide2{
+      background:url('../../images/bussm.jpg') top center no-repeat;
+   }
+
+   #slide3{
+      background:url('../../images/hotelsm.jpg') top center no-repeat;
+   }
+    #slide4{
+      background:url('../../images/homesm.jpg') top center no-repeat;
+   }
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+   #myCarousel .item 
+   {
+      height: 500px;
+   }
+   #slide1{
+      background:url('../../images/flightmed.jpg') top center no-repeat;
+   }
+   #slide2{
+      background:url('../../images/busmed.jpg') top center no-repeat;
+   }
+
+   #slide3{
+      background:url('../../images/hotelmed.jpg') top center no-repeat;
+   }
+    #slide4{
+      background:url('../../images/homemed.jpg') top center no-repeat;
+   }
+   .carousel-caption{
+      font-size: 16px;
+   }
+   .carousel-caption h4{
+      font-size: 22px;
+   }
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   #myCarousel .item {
+      height: 500px;
+   }
+   #slide1{
+      background:url('../../images/flight.jpg') top center no-repeat;
+   }
+   #slide2{
+      background:url('../../images/bus.jpg') top center no-repeat;
+   }
+
+   #slide3{
+      background:url('../../images/hotel.jpg') top center no-repeat;
+   }
+
+     #slide4{
+      background:url('../../images/home.jpg') top center no-repeat;
+   }
+	
+}

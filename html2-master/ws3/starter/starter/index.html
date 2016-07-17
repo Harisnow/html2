@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+				
+				<!-- Website Title & Description for Search Engine purposes -->
+				<title></title>
+				<meta name="description" content="">
+				
+				<!-- Mobile viewport optimized -->
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+				
+				<!-- Bootstrap CSS -->
+				<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+				<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+				<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+				
+				<!-- Custom CSS -->
+				<link href="includes/css/styles.css" rel="stylesheet">
+				<link href="includes/css/font-awesome.css" rel="stylesheet">
+				<link href="includes/css/font-awesome.min.css" rel="stylesheet">
+				
+				<!-- Include Modernizr in the head, before any other Javascript -->
+				<script src="includes/js/modernizr-2.6.2.min.js"></script>
+				
+			</head>
+			<body>
+			
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/bat.jpg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Book Now<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="domfli.html">Domestic flights</a></li>
+            <li><a href="#">International flights</a></li>
+            <li><a href="#">Domestic Hotels</a></li>
+            <li><a href="#">International Hotels</a></li>
+             <li><a href="#">Domestic Holidays</a></li>
+              <li><a href="#">International Holidays</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><small>more</small></a></li>
+             <li><a href="#">Buses</a></li>
+             <li><a href="#">Trains</a></li>
+             <li><a href="#">Flight + Hotel combo</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search based on package" id="searchInput">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Support Centre</a></li>
+        <li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-print"></span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Sign in / Sign up <span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>  My profile</a></li>
+          	<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>  Manage bookings</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-usd"></span>  Make payment</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>  Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-remove"></span>  Cancel bookings</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-off"></span>  Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>  
+
+
+
+
+
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">&times;</button>
+				
+				<h4 class="modal-title">View your E-ticket</h4>
+			</div><!-- end modal-header -->
+			<div class="modal-body">								
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputName">User-ID</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputuser" placeholder="User-id" type="text">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputEmail">Password</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputpass" placeholder="password" type="password">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputMessage">Mobile</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputMessage" placeholder="Number" type="number">
+							<button class="btn btn-primary pull-left" type="submit">View Tickets</button>
+							<button class="btn btn-success pull-right" type="submit">Print now</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="container-fluid">
+				<div class="carousel slide" id="myCarousel">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+						<li data-slide-to="1" data-target="#myCarousel"></li>
+						<li data-slide-to="2" data-target="#myCarousel"></li>
+					</ol>
+			<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+						<h4> Hydra Flights</h4>
+						<p>Exclusive 50% off on flight bookings</p>
+						</div>
+						</div>
+
+						<div class="item" id="slide2">
+						<div class="carousel-caption">
+						<h4>Hydra Buses</h4>
+						<p>Get 30% off on bus bookings on the app</p>
+						</div>
+						</div>
+
+						<div class="item" id="slide3">
+						<div class="carousel-caption">
+						<div class="hydra">
+						<h4> Hydra Hotels</h4>
+						<p>Find best deals across 200,000+ hotels worldwide</p>
+						</div>
+						</div>
+							</div>
+								</div><!-- carousel-inner -->
+
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+									</div><!-- end myCarousel -->
+									</div>
+<div class="row" id="bigCallout">
+	<div class="col-12">		
+		<div class="well well-small visible-sm">
+				<a href="#" class="btn btn-large btn-block btn-default">Book Now  <span class="glyphicon glyphicon-download"></span></a>
+			</div>
+
+	<div class="about">
+		<div class="container">
+			<div class="about-heading">
+				<h2>Top Packages</h2>
+			</div>
+			<div class="about-grids">
+				<div class="col-md-3 about-grid">
+					<div class="about-grid-info">
+						<h4>San Francisco</h4>
+					</div>
+				</div>
+				<div class="col-md-3 about-grid">
+					<div class="about-grid-info about-grid-info1">
+						<h4>Maldives</h4>
+					</div>
+				</div>
+				<div class="col-md-3 about-grid">
+					<div class="about-grid-info about-grid-info2">
+						<h4>Ireland</h4>
+					</div>
+				</div>
+				<div class="col-md-3 about-grid">
+					<div class="about-grid-info about-grid-info3">
+						<h4>New Zealand</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+						
+
+		<div class="well container">
+			<div class="page-header">
+				<h1 class="deal text-info">Hydra's Deal of the Month!!<span class="glyphicon glyphicon-tags"></span><small>       [App only]</small></h1>
+
+			</div><!-- end page head -->
+			<p class="lead deal text-success">Download the Hydra app right now and get your first bus ride free!!!!</p>	
+			<div class="app">
+			<a href="" class="btn btn-primary btn-lg" id="alertMe">Get App now  <span class="glyphicon glyphicon-download"></span></a>
+			<a href="" class="btn btn-default btn-link "><ins>read terms and conditions</ins></a>
+			</div>				
+		</div><!-- end well-->				
+	</div><!-- end col-12 -->
+</div><!-- end bigcall -->
+
+<div class="container-fluid deals">
+			<div class="row" id="featuresHeading">
+							<div class="col-12">
+								<h3 class="deal"><mark>DEALS AND PACKAGES</mark></h3>
+							</div>
+			</div>
+			<div class="container" id="hello">
+	<div class="row" id="features">
+		<div class="col-sm-4 feature">
+					<h3><em>Travel Abroad!!</em></h3>
+					<img src="images/1.jpg" alt="html5">
+						<a href="www.google.com" target="_blank" class="btn btn-warning btn-sm"><h5>Search Hotels</h5></a>
+		</div>
+		<div class="col-sm-4 feature">
+					<h3><em>Honeymoon Deals!!</em></h3>
+					<img src="images/2.jpg" alt="html5" >
+						<a href="http://www.google.com" target="_blank" class="btn btn-danger btn-sm"><h5>Search Holiday Deals</h5></a>
+			</div>
+		<div class="col-sm-4 feature">
+					<h3><em>Women Only Deals!!!</em></h3>
+					<img src="images/3.jpg" alt="boot3">
+
+						<a href="www.gmail.com" target="_blank" class="btn btn-info btn-sm"><h5>Book Now</h5></a>
+			</div>
+	</div>
+	</div>
+</div>	
+
+
+
+	<div class="container-fluid spcl">
+		<h2 class="big-title"><bold>Hydra Specials</bold></h2>
+		<div class="row spcl spcl2">
+		<div class="col-sm-4">
+					<a href=""><img src="images/11.jpg"></a>
+					<h5 class="price2">Flat 50% OFF<br><small>use code BLISS35 to avail offer</small></h5>
+					<h4 class="price">&#8377;5,000<br><small class="code">onwards</small></h4>
+					</div>
+		<div class="col-sm-4">
+		<a href=""><img src="images/aus.jpg"></a>
+		<h5 class="price2">Australia packages<br><small>5N/6D</small></h5>
+		<h4 class="price">&#8377;10,00,00<br><small class="code">onwards</small></h4>
+		</div>
+
+
+		<div class="col-sm-4">
+		<a href=""><img src="images/22.jpg"></a>
+		<div class="new-details"></div>
+		<h5 class="price2">Ladakh Super Saver<br><small>4N/5D</small></h5>
+		<h4 class="price">&#8377;10,000<br><small class="code">onwards</small></h4>
+		</div>
+			</div>
+		</div>
+
+
+
+
+	<footer>
+	<div class="container-fluid">
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-grid">
+					<div class="footer-grid-heading">
+						<h4>About us</h4>
+					</div>
+					<div class="footer-grid-info">
+						<p>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<div class="footer-grid-heading">
+						<h4>Navigation</h4>
+					</div>
+					<div class="footer-grid-info">
+						<ul>
+							<li><a href="">About us</a></li>
+							<li><a href="">Career</a></li>
+							<li><a href="">Contact Us</a></li>
+							<li><a href="">Help and support</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<div class="footer-grid-heading">
+						<h4>Follow Us</h4>
+					</div>
+					<div class="social">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<div class="footer-grid-heading">
+						<h4>Subscribe!!</h4>
+					</div>
+					<div class="footer-grid-info">
+						<form action="#" method="get">
+							<input type="email" name="EMAIL" placeholder="Enter your email-id here">
+							<input type="submit" value="Subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p> 2016 My Trip . All Rights Reserved | Design by <a href="#">Hydra</a> </p>
+			</div>
+		</div>
+	</div>
+		
+</footer>
+
+
+
+
+
+
+			
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+					
+
+				
+
+			<!-- All Javascript at the bottom of the page for faster page loading -->
+				
+			<!-- First try for the online version of jQuery-->
+			<script src="http://code.jquery.com/jquery.js"></script>
+			
+			<!-- If no online access, fallback to our hardcoded version of jQuery -->
+			<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+			
+			<!-- Bootstrap JS -->
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+			
+			<!-- Custom JS -->
+			<script src="includes/js/script.js"></script>
+			
+			</body>
+		</html>
+
+ 
